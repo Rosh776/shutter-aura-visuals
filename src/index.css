@@ -2,10 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-/* ShutR Gallery - Minimalist Dark Theme Design System */
+/* ShutR Gallery - Multi-Theme Design System */
 @layer base {
   :root {
-    /* Dark minimalist palette */
+    /* Default Dark Theme */
     --background: 220 13% 9%;
     --foreground: 210 20% 98%;
     --surface: 220 13% 12%;
@@ -64,6 +64,71 @@
     --bounce-timing: cubic-bezier(0.68, -0.55, 0.265, 1.55);
 
     --radius: 0.75rem;
+  }
+
+  /* Blue Theme */
+  .theme-blue {
+    --background: 220 26% 14%;
+    --foreground: 210 20% 98%;
+    --surface: 220 26% 18%;
+    --surface-variant: 220 26% 22%;
+    --primary: 217 91% 60%;
+    --primary-hover: 217 91% 55%;
+    --primary-glow: 217 91% 60%;
+    --accent: 199 89% 48%;
+    --accent-hover: 199 89% 40%;
+    --secondary: 220 26% 22%;
+    --secondary-hover: 220 26% 25%;
+    --gradient-primary: linear-gradient(135deg, hsl(217 91% 60%), hsl(199 89% 48%));
+    --gradient-background: linear-gradient(135deg, hsl(220 26% 14%) 0%, hsl(220 26% 10%) 100%);
+  }
+
+  /* White Theme */
+  .theme-white {
+    --background: 0 0% 98%;
+    --foreground: 220 13% 9%;
+    --surface: 0 0% 95%;
+    --surface-variant: 0 0% 90%;
+    --primary: 220 13% 9%;
+    --primary-foreground: 0 0% 98%;
+    --primary-hover: 220 13% 15%;
+    --primary-glow: 220 13% 9%;
+    --accent: 217 91% 60%;
+    --accent-foreground: 0 0% 98%;
+    --accent-hover: 217 91% 55%;
+    --secondary: 0 0% 90%;
+    --secondary-foreground: 220 13% 9%;
+    --secondary-hover: 0 0% 85%;
+    --muted: 0 0% 90%;
+    --muted-foreground: 220 13% 40%;
+    --card: 0 0% 95%;
+    --card-foreground: 220 13% 9%;
+    --border: 0 0% 85%;
+    --glass: 0 0% 95% / 0.8;
+    --glass-border: 220 13% 9% / 0.1;
+    --gradient-primary: linear-gradient(135deg, hsl(220 13% 9%), hsl(217 91% 60%));
+    --gradient-background: linear-gradient(135deg, hsl(0 0% 98%) 0%, hsl(0 0% 94%) 100%);
+  }
+
+  /* Neon Theme */
+  .theme-neon {
+    --background: 240 10% 4%;
+    --foreground: 0 0% 100%;
+    --surface: 240 10% 8%;
+    --surface-variant: 240 10% 12%;
+    --primary: 300 100% 50%;
+    --primary-hover: 300 100% 45%;
+    --primary-glow: 300 100% 50%;
+    --accent: 180 100% 50%;
+    --accent-hover: 180 100% 40%;
+    --secondary: 240 10% 12%;
+    --secondary-hover: 240 10% 15%;
+    --brand-cyan: 180 100% 50%;
+    --brand-purple: 300 100% 50%;
+    --gradient-primary: linear-gradient(135deg, hsl(300 100% 50%), hsl(180 100% 50%));
+    --gradient-background: linear-gradient(135deg, hsl(240 10% 4%) 0%, hsl(240 10% 2%) 100%);
+    --shadow-glow: 0 0 30px hsl(300 100% 50% / 0.5);
+    --shadow-intense: 0 0 50px hsl(300 100% 50% / 0.7);
   }
 }
 

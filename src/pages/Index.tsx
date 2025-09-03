@@ -3,6 +3,7 @@ import { Header } from "@/components/Header";
 import { CategoryGrid } from "@/components/CategoryGrid";
 import { Chatbot } from "@/components/Chatbot";
 import { AudioManager } from "@/components/AudioManager";
+import { ThemeSwitcher } from "@/components/ThemeSwitcher";
 import { toast } from "sonner";
 
 const Index = () => {
@@ -183,6 +184,9 @@ const Index = () => {
 
       {/* Audio Manager */}
       <AudioManager />
+
+      {/* Theme Switcher */}
+      <ThemeSwitcher onThemeChange={(theme) => toast.success(`Switched to ${theme} theme`)} />
 
       {/* Scroll to top indicator */}
       <div className="fixed bottom-6 right-6 z-40">
