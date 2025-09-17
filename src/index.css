@@ -240,6 +240,20 @@
     animation: shimmer 3s ease-in-out infinite;
   }
 
+  /* Interactive hero text */
+  .hero-text-interactive {
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    animation: breathe 4s ease-in-out infinite;
+    cursor: default;
+  }
+
+  .hero-text-interactive:hover {
+    transform: scale(1.02) translateY(-2px);
+    color: hsl(var(--accent));
+    text-shadow: 0 0 20px hsl(var(--accent) / 0.3);
+    animation: breathe 4s ease-in-out infinite, shimmerText 2s ease-in-out;
+  }
+
   /* Pulse animation for interactive elements */
   .pulse-glow {
     animation: pulseGlow 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
@@ -338,6 +352,29 @@
     to {
       opacity: 1;
       transform: translateY(0);
+    }
+  }
+
+  @keyframes breathe {
+    0%, 100% { 
+      opacity: 0.8;
+      transform: translateY(0px);
+    }
+    50% { 
+      opacity: 1;
+      transform: translateY(-1px);
+    }
+  }
+
+  @keyframes shimmerText {
+    0% { 
+      text-shadow: 0 0 5px hsl(var(--accent) / 0.2);
+    }
+    50% { 
+      text-shadow: 0 0 25px hsl(var(--accent) / 0.5), 0 0 35px hsl(var(--accent) / 0.3);
+    }
+    100% { 
+      text-shadow: 0 0 5px hsl(var(--accent) / 0.2);
     }
   }
 

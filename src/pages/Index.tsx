@@ -90,7 +90,7 @@ const Index = () => {
                   <span className="text-2xl md:text-3xl text-muted-foreground align-super ml-2">s.r</span>
                 </h1>
                 <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-3xl mx-auto 
-                             animate-fade-in-up animate-delay-200">
+                             animate-fade-in-up animate-delay-200 hero-text-interactive">
                   Discover the art of photography through stunning collections that capture 
                   life's most beautiful moments
                 </p>
